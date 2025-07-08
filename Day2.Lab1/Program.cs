@@ -18,17 +18,24 @@ namespace Day1.Lab1
             //Console.WriteLine($"the result of calculation distance = {p2.CalcDistance(p1)} "); 
             #endregion
 
-
             #region Fraction
-            Fraction f1 = new Fraction() { nom = 5, Den = 6 };
-            Fraction f2 = new Fraction() { nom = 2, Den = 5 };
+            //Fraction f1 = new Fraction() { nom = 5, Den = 6 };
+            //Fraction f2 = new Fraction() { nom = 2, Den = 5 };
+
+            //f1.display();
+            //f2.display();
+
+            //Fraction res = f1.add(f1, f2);
+            //Console.WriteLine($"The Sum = {res.nom} / {res.Den} ");
+
+            Fraction f1 = new Fraction(5,0);
+            Fraction f2 = new Fraction(2, 5);
 
             f1.display();
-
             f2.display();
-
-            Fraction res = f1.add(f1, f2);
-            Console.WriteLine($"The Sum = {res.nom} / {res.Den} "); 
+            //Fraction res = f1.add(f1, f2);
+            Fraction res = new Fraction(f1, f2);
+            //Console.WriteLine($"The Sum = {res.nom} / {res.den} ");
             #endregion
 
 
